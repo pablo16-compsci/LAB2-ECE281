@@ -72,7 +72,7 @@ begin
         w_hex <= x"B"; wait for 10 ns;
         assert (w_seg_n = "0000011") report "error with B" severity failure;
         w_hex <= x"C"; wait for 10 ns;
-        assert (w_seg_n = "1000110") report "error with C" severity failure;
+        assert (w_seg_n = "0100111") report "error with C" severity failure;
         w_hex <= x"D"; wait for 10 ns;
         assert (w_seg_n = "0100001") report "error with D" severity failure;
         w_hex <= x"E"; wait for 10 ns;
