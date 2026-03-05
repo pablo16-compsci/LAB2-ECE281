@@ -47,13 +47,13 @@ begin
             
     test_process : process
     begin
-        w_hex <= x"0"; wait for 10ns;
+        w_hex <= x"0"; wait for 10 ns;
         assert(w_seg_n ="0000001") report "error with 0" severity failure;
-        w_hex <= x"1"; wait for 10ns;
+        w_hex <= x"1"; wait for 10 ns;
         assert(w_seg_n ="1001111") report "error with 1" severity failure;
-        w_hex <= x"2"; wait for 10ns;
+        w_hex <= x"2"; wait for 10 ns;
         assert(w_seg_n ="0010010") report "error with 2" severity failure;
-        w_hex <= x"3"; wait for 10ns;
+        w_hex <= x"3"; wait for 10 ns;
         assert(w_seg_n ="0000110") report "error with 3" severity failure;
         w_hex <= x"4"; wait for 10 ns;
         assert (w_seg_n = "1001100") report "error with 4" severity failure;
@@ -81,4 +81,5 @@ begin
         assert (w_seg_n = "0111000") report "error with F" severity failure;
         report "sevenseg_decoder_tb: all passed" severity note;
         wait;
+        end process;
 end Behavioral;

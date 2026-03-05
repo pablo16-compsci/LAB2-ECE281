@@ -3,13 +3,13 @@
 -- Engineer: 
 -- 
 -- Create Date: 03/01/2026 09:53:20 PM
--- Design Name: 
+-- Design Name: sevenseg_decoder
 -- Module Name: sevenseg_decoder - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
 -- Description: 
--- 
+-- documentation statement: I did not receive any help on the code
 -- Dependencies: 
 -- 
 -- Revision:
@@ -21,15 +21,6 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity sevenseg_decoder is
     Port ( i_Hex : in STD_LOGIC_VECTOR (3 downto 0);
